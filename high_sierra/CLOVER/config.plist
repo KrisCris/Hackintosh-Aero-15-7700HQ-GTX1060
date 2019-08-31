@@ -171,7 +171,7 @@
 					<key>Comment</key>
 					<string>change PCI0.VID to IGPU #1 (Thinkpad)</string>
 					<key>Disabled</key>
-					<true/>
+					<false/>
 					<key>Find</key>
 					<data>
 					UENJMFZJRF8=
@@ -185,7 +185,7 @@
 					<key>Comment</key>
 					<string>change PCI0.VID to IGPU #2 (Thinkpad)</string>
 					<key>Disabled</key>
-					<true/>
+					<false/>
 					<key>Find</key>
 					<data>
 					VklEXwhfQURSDAAAAgA=
@@ -240,7 +240,7 @@
 		<key>#DefaultVolume</key>
 		<string>LastBootedVolume</string>
 		<key>Arguments</key>
-		<string>dart=0 nv_disable=1 -cdfon -igfxnohdmi lilucpu=8</string>
+		<string>dart=0 nv_disable=1 -disablegfxfirmware -cdfon -igfxnohdmi lilucpu=9</string>
 		<key>NeverHibernate</key>
 		<true/>
 		<key>Secure</key>
@@ -249,7 +249,7 @@
 		<integer>5</integer>
 	</dict>
 	<key>Comment</key>
-	<string>This file is for spoofing KabyLake as Skylake (requried prior to 10.12.6)</string>
+	<string>This file is for 10.12.6+ with native KabyLake support</string>
 	<key>Devices</key>
 	<dict>
 		<key>AddProperties</key>
@@ -371,9 +371,9 @@
 		<key>FakeID</key>
 		<dict>
 			<key>#IntelGFX</key>
-			<string>0x19168086</string>
+			<string>0x59168086</string>
 			<key>#Kaby Lake-Comment</key>
-			<string>Kaby Lake HD620 graphics supportable by using Skylake device-id</string>
+			<string>To avoid automatic Clover fake device-id (Skylake) injection</string>
 		</dict>
 		<key>Properties</key>
 		<dict>
@@ -389,10 +389,33 @@
 				<string></string>
 				<key>## @3 HDMI</key>
 				<string></string>
-				<key>## patch0</key>
-				<string>Enable lid wake for 0x19260002 credit syscl/lighting/Yating Zhou</string>
-				<key>## patch1</key>
-				<string>Enable lid wake for 0x19260004 credit syscl/lighting/Yating Zhou</string>
+				<key>#1 0306-&gt;0105</key>
+				<string>0x591b0000, 0105 instead of 0306, HDMI</string>
+				<key>#1 framebuffer-con1-alldata</key>
+				<data>
+				AQUKAAAIAACHAQAAAgQKAAAIAACHAQAA/wAAAAEAAAAg
+				AAAA
+				</data>
+				<key>#1 framebuffer-con1-enable</key>
+				<integer>1</integer>
+				<key>#2 0204-&gt;0105</key>
+				<string>0x591b0000, 0105 instead of 0204, HDMI</string>
+				<key>#2 framebuffer-con1-alldata</key>
+				<data>
+				AQUKAAAIAACHAQAAAwYKAAAEAACHAQAA/wAAAAEAAAAg
+				AAAA
+				</data>
+				<key>#2 framebuffer-con1-enable</key>
+				<integer>1</integer>
+				<key>#3 framebuffer-con1-alldata</key>
+				<data>
+				/wAAAAEAAAAgAAAA/wAAAAEAAAAgAAAA/wAAAAEAAAAg
+				AAAA
+				</data>
+				<key>#3 framebuffer-con1-enable</key>
+				<integer>1</integer>
+				<key>#3 no external</key>
+				<string>0x591b0000, eliminate all external ports (0204 and 0306)</string>
 				<key>#AAPL00,override-no-edid</key>
 				<data>
 				</data>
@@ -444,35 +467,15 @@
 				<data>
 				AAgAAA==
 				</data>
-				<key>#framebuffer-patch0-enable</key>
-				<integer>1</integer>
-				<key>#framebuffer-patch0-find</key>
-				<data>
-				ChMDAAAABgAAAAAAAAAAAA==
-				</data>
-				<key>#framebuffer-patch0-replace</key>
-				<data>
-				DxMDAAAABgAAAAAAAAAAAA==
-				</data>
-				<key>#framebuffer-patch1-enable</key>
-				<integer>1</integer>
-				<key>#framebuffer-patch1-find</key>
-				<data>
-				CgsDAAAHBgADAAAABAAAAA==
-				</data>
-				<key>#framebuffer-patch1-replace</key>
-				<data>
-				DwsDAAAHBgADAAAABAAAAA==
-				</data>
 				<key>#hda-gfx</key>
 				<string>onboard-1</string>
 				<key>AAPL,ig-platform-id</key>
 				<data>
-				AAAbGQ==
+				AAAbWQ==
 				</data>
 				<key>device-id</key>
 				<data>
-				FhkAAA==
+				FlkAAA==
 				</data>
 				<key>framebuffer-fbmem</key>
 				<data>
@@ -550,8 +553,6 @@
 		<array>
 			<string>Preboot</string>
 		</array>
-		<key>Language</key>
-		<string>cn:0</string>
 		<key>Mouse</key>
 		<dict>
 			<key>Enabled</key>
@@ -579,7 +580,7 @@
 			<false/>
 		</dict>
 		<key>#ig-platform-id</key>
-		<string>0x191b0000</string>
+		<string>0x591b0000</string>
 		<key>Inject</key>
 		<dict>
 			<key>ATI</key>
@@ -592,8 +593,6 @@
 	</dict>
 	<key>KernelAndKextPatches</key>
 	<dict>
-		<key>#Kaby Lake-Comment</key>
-		<string>Kaby Lake CPU supportable by using CPUID from Skylake</string>
 		<key>AppleRTC</key>
 		<true/>
 		<key>DellSMBIOSPatch</key>
@@ -662,59 +661,13 @@
 		<string>0x28</string>
 		<key>CsrActiveConfig</key>
 		<string>0x67</string>
-		<key>ROM</key>
-		<data>
-		zbDyNtda
-		</data>
 	</dict>
 	<key>SMBIOS</key>
 	<dict>
-		<key>BiosReleaseDate</key>
-		<string>06/17/2019</string>
-		<key>BiosVendor</key>
-		<string>Apple Inc.</string>
-		<key>BiosVersion</key>
-		<string>MBP143.88Z.F000.B00.1906171614</string>
-		<key>Board-ID</key>
-		<string>Mac-551B86E5744E2388</string>
-		<key>BoardManufacturer</key>
-		<string>Apple Inc.</string>
-		<key>BoardSerialNumber</key>
-		<string>C02741600GUJ1JHFB</string>
-		<key>BoardType</key>
-		<integer>10</integer>
-		<key>BoardVersion</key>
-		<string>1.0</string>
-		<key>ChassisAssetTag</key>
-		<string>MacBook-Aluminum</string>
-		<key>ChassisManufacturer</key>
-		<string>Apple Inc.</string>
-		<key>ChassisType</key>
-		<string>0x09</string>
-		<key>EfiVersion</key>
-		<string>198.0.0.0.0</string>
-		<key>Family</key>
-		<string>MacBook Pro</string>
-		<key>FirmwareFeatures</key>
-		<string>0xFC0FE13F</string>
-		<key>FirmwareFeaturesMask</key>
-		<string>0xFF1FFF3F</string>
-		<key>LocationInChassis</key>
-		<string>Part Component</string>
-		<key>Manufacturer</key>
-		<string>Apple Inc.</string>
-		<key>Mobile</key>
-		<true/>
-		<key>PlatformFeature</key>
-		<string>0x1A</string>
 		<key>ProductName</key>
-		<string>MacBookPro14,3</string>
-		<key>SerialNumber</key>
-		<string>C02VJ8ZQHTD5</string>
-		<key>SmUUID</key>
-		<string>72A76E04-B62C-41B3-B1E7-5D268036D75A</string>
-		<key>Version</key>
-		<string>1.0</string>
+		<string>MacBookPro14,1</string>
+		<key>Trust</key>
+		<true/>
 	</dict>
 	<key>SystemParameters</key>
 	<dict>
