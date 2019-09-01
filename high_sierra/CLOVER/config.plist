@@ -171,7 +171,7 @@
 					<key>Comment</key>
 					<string>change PCI0.VID to IGPU #1 (Thinkpad)</string>
 					<key>Disabled</key>
-					<false/>
+					<true/>
 					<key>Find</key>
 					<data>
 					UENJMFZJRF8=
@@ -185,7 +185,7 @@
 					<key>Comment</key>
 					<string>change PCI0.VID to IGPU #2 (Thinkpad)</string>
 					<key>Disabled</key>
-					<false/>
+					<true/>
 					<key>Find</key>
 					<data>
 					VklEXwhfQURSDAAAAgA=
@@ -240,7 +240,7 @@
 		<key>#DefaultVolume</key>
 		<string>LastBootedVolume</string>
 		<key>Arguments</key>
-		<string>dart=0 nv_disable=1 -disablegfxfirmware -cdfon -igfxnohdmi lilucpu=9</string>
+		<string>-disablegfxfirmware -igfxnohdmi lilucpu=9</string>
 		<key>NeverHibernate</key>
 		<true/>
 		<key>Secure</key>
@@ -260,7 +260,7 @@
 				<key>Device</key>
 				<string>NVidia</string>
 				<key>Disabled</key>
-				<false/>
+				<true/>
 				<key>Key</key>
 				<string>name</string>
 				<key>Value</key>
@@ -274,7 +274,7 @@
 				<key>Device</key>
 				<string>NVidia</string>
 				<key>Disabled</key>
-				<false/>
+				<true/>
 				<key>Key</key>
 				<string>IOName</string>
 				<key>Value</key>
@@ -286,7 +286,7 @@
 				<key>Device</key>
 				<string>NVidia</string>
 				<key>Disabled</key>
-				<false/>
+				<true/>
 				<key>Key</key>
 				<string>class-code</string>
 				<key>Value</key>
@@ -300,7 +300,7 @@
 				<key>Device</key>
 				<string>ATI</string>
 				<key>Disabled</key>
-				<false/>
+				<true/>
 				<key>Key</key>
 				<string>name</string>
 				<key>Value</key>
@@ -314,7 +314,7 @@
 				<key>Device</key>
 				<string>ATI</string>
 				<key>Disabled</key>
-				<false/>
+				<true/>
 				<key>Key</key>
 				<string>IOName</string>
 				<key>Value</key>
@@ -326,7 +326,7 @@
 				<key>Device</key>
 				<string>ATI</string>
 				<key>Disabled</key>
-				<false/>
+				<true/>
 				<key>Key</key>
 				<string>class-code</string>
 				<key>Value</key>
@@ -340,7 +340,7 @@
 				<key>Device</key>
 				<string>ATI</string>
 				<key>Disabled</key>
-				<false/>
+				<true/>
 				<key>Key</key>
 				<string>vendor-id</string>
 				<key>Value</key>
@@ -354,7 +354,7 @@
 				<key>Device</key>
 				<string>ATI</string>
 				<key>Disabled</key>
-				<false/>
+				<true/>
 				<key>Key</key>
 				<string>device-id</string>
 				<key>Value</key>
@@ -584,11 +584,11 @@
 		<key>Inject</key>
 		<dict>
 			<key>ATI</key>
-			<true/>
+			<false/>
 			<key>Intel</key>
 			<false/>
 			<key>NVidia</key>
-			<true/>
+			<false/>
 		</dict>
 	</dict>
 	<key>KernelAndKextPatches</key>
@@ -661,18 +661,68 @@
 		<string>0x28</string>
 		<key>CsrActiveConfig</key>
 		<string>0x67</string>
+		<key>ROM</key>
+		<data>
+		1YIc2mot
+		</data>
 	</dict>
 	<key>SMBIOS</key>
 	<dict>
-		<key>ProductName</key>
-		<string>MacBookPro14,1</string>
-		<key>Trust</key>
+		<key>BiosReleaseDate</key>
+		<string>06/17/2019</string>
+		<key>BiosVendor</key>
+		<string>Apple Inc.</string>
+		<key>BiosVersion</key>
+		<string>MBP143.88Z.F000.B00.1906171614</string>
+		<key>Board-ID</key>
+		<string>Mac-551B86E5744E2388</string>
+		<key>BoardManufacturer</key>
+		<string>Apple Inc.</string>
+		<key>BoardSerialNumber</key>
+		<string>C02728104GUJ1JHA8</string>
+		<key>BoardType</key>
+		<integer>10</integer>
+		<key>BoardVersion</key>
+		<string>1.0</string>
+		<key>ChassisAssetTag</key>
+		<string>MacBook-Aluminum</string>
+		<key>ChassisManufacturer</key>
+		<string>Apple Inc.</string>
+		<key>ChassisType</key>
+		<string>0x09</string>
+		<key>EfiVersion</key>
+		<string>198.0.0.0.0</string>
+		<key>Family</key>
+		<string>MacBook Pro</string>
+		<key>FirmwareFeatures</key>
+		<string>0xFC0FE13F</string>
+		<key>FirmwareFeaturesMask</key>
+		<string>0xFF1FFF3F</string>
+		<key>LocationInChassis</key>
+		<string>Part Component</string>
+		<key>Manufacturer</key>
+		<string>Apple Inc.</string>
+		<key>Mobile</key>
 		<true/>
+		<key>PlatformFeature</key>
+		<string>0x1A</string>
+		<key>ProductName</key>
+		<string>MacBookPro14,3</string>
+		<key>SerialNumber</key>
+		<string>C02V25Y6HTD5</string>
+		<key>SmUUID</key>
+		<string>A1D75DE8-6725-46CE-A47B-325341DA6A2D</string>
+		<key>Version</key>
+		<string>1.0</string>
 	</dict>
 	<key>SystemParameters</key>
 	<dict>
 		<key>InjectKexts</key>
 		<string>Detect</string>
+		<key>InjectSystemID</key>
+		<true/>
+		<key>NvidiaWeb</key>
+		<true/>
 	</dict>
 </dict>
 </plist>
