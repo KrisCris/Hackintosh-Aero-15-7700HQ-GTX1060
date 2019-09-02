@@ -240,7 +240,7 @@
 		<key>#DefaultVolume</key>
 		<string>LastBootedVolume</string>
 		<key>Arguments</key>
-		<string>-disablegfxfirmware -igfxnohdmi lilucpu=9</string>
+		<string>-disablegfxfirmware -igfxnohdmi lilucpu=9 -cdfon</string>
 		<key>NeverHibernate</key>
 		<true/>
 		<key>Secure</key>
