@@ -365,8 +365,8 @@
 		</array>
 		<key>Audio</key>
 		<dict>
-			<key>Inject</key>
-			<string>No</string>
+			<key>ResetHDA</key>
+			<false/>
 		</dict>
 		<key>FakeID</key>
 		<dict>
@@ -651,6 +651,25 @@
 				<key>Replace</key>
 				<data>
 				igKEwOtC
+				</data>
+			</dict>
+		</array>
+		<key>KextsToPatch</key>
+		<array>
+			<dict>
+				<key>Comment</key>
+				<string>Boot graphics glitch, 10.10.2/10.10.3</string>
+				<key>Disabled</key>
+				<false/>
+				<key>Find</key>
+				<data>
+				QYjE6xE=
+				</data>
+				<key>Name</key>
+				<string>com.apple.iokit.IOGraphicsFamily</string>
+				<key>Replace</key>
+				<data>
+				QYjE6zE=
 				</data>
 			</dict>
 		</array>
