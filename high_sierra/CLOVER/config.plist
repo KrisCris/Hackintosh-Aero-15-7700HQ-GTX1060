@@ -16,6 +16,8 @@
 			<dict>
 				<key>Comment-IRQ Fix</key>
 				<string>The following fixes may be needed for onboard audio/USB/etc</string>
+				<key>FixDarwin</key>
+				<false/>
 				<key>FixHPET</key>
 				<false/>
 				<key>FixIPIC</key>
@@ -199,6 +201,7 @@
 		</dict>
 		<key>DisabledAML</key>
 		<array>
+			<string>SSDT-Disable-DGPU.aml</string>
 			<string>SSDT.aml</string>
 			<string>SSDT-XCPM.aml</string>
 			<string>SSDT-PluginType1.aml</string>
@@ -241,6 +244,8 @@
 		<string>LastBootedVolume</string>
 		<key>Arguments</key>
 		<string>-disablegfxfirmware -igfxnohdmi lilucpu=9 -cdfon</string>
+		<key>CustomLogo</key>
+		<false/>
 		<key>NeverHibernate</key>
 		<true/>
 		<key>Secure</key>
@@ -665,6 +670,8 @@
 				<data>
 				QYjE6xE=
 				</data>
+				<key>InfoPlistPatch</key>
+				<false/>
 				<key>Name</key>
 				<string>com.apple.iokit.IOGraphicsFamily</string>
 				<key>Replace</key>
