@@ -202,7 +202,6 @@
 		<key>DisabledAML</key>
 		<array>
 			<string>SSDT.aml</string>
-			<string>SSDT-Disable-DGPU.aml</string>
 			<string>SSDT-XCPM.aml</string>
 			<string>SSDT-PluginType1.aml</string>
 		</array>
@@ -396,22 +395,8 @@
 				<string></string>
 				<key>#1 0306-&gt;0105</key>
 				<string>0x591b0000, 0105 instead of 0306, HDMI</string>
-				<key>#1 framebuffer-con1-alldata</key>
-				<data>
-				AQUKAAAIAACHAQAAAgQKAAAIAACHAQAA/wAAAAEAAAAg
-				AAAA
-				</data>
-				<key>#1 framebuffer-con1-enable</key>
-				<integer>1</integer>
 				<key>#2 0204-&gt;0105</key>
 				<string>0x591b0000, 0105 instead of 0204, HDMI</string>
-				<key>#2 framebuffer-con1-alldata</key>
-				<data>
-				AQUKAAAIAACHAQAAAwYKAAAEAACHAQAA/wAAAAEAAAAg
-				AAAA
-				</data>
-				<key>#2 framebuffer-con1-enable</key>
-				<integer>1</integer>
 				<key>#3 framebuffer-con1-alldata</key>
 				<data>
 				/wAAAAEAAAAgAAAA/wAAAAEAAAAgAAAA/wAAAAEAAAAg
@@ -474,6 +459,20 @@
 				</data>
 				<key>#hda-gfx</key>
 				<string>onboard-1</string>
+				<key>1 framebuffer-con1-alldata</key>
+				<data>
+				AQUKAAAIAACHAQAAAgQKAAAIAACHAQAA/wAAAAEAAAAg
+				AAAA
+				</data>
+				<key>1 framebuffer-con1-enable</key>
+				<integer>1</integer>
+				<key>2 framebuffer-con1-alldata</key>
+				<data>
+				AQUKAAAIAACHAQAAAwYKAAAEAACHAQAA/wAAAAEAAAAg
+				AAAA
+				</data>
+				<key>2 framebuffer-con1-enable</key>
+				<integer>1</integer>
 				<key>AAPL,ig-platform-id</key>
 				<data>
 				AAAbWQ==
@@ -679,24 +678,6 @@
 				QYjE6zE=
 				</data>
 			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>USB 10.13.6+ by PMHeart</string>
-				<key>Disabled</key>
-				<false/>
-				<key>Find</key>
-				<data>
-				g32IDw+DpwQAAA==
-				</data>
-				<key>MatchOS</key>
-				<string>10.13.x</string>
-				<key>Name</key>
-				<string>com.apple.driver.usb.AppleUSBXHCI</string>
-				<key>Replace</key>
-				<data>
-				g32ID5CQkJCQkA==
-				</data>
-			</dict>
 		</array>
 	</dict>
 	<key>RtVariables</key>
@@ -764,8 +745,6 @@
 		<key>InjectKexts</key>
 		<string>Detect</string>
 		<key>InjectSystemID</key>
-		<true/>
-		<key>NvidiaWeb</key>
 		<true/>
 	</dict>
 </dict>
