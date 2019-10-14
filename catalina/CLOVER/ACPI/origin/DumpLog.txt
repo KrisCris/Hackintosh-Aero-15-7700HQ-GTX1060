@@ -1,0 +1,148 @@
+18:283  9:628  Found UEFI Acpi 2.0 RSDP at 6A375000
+18:284  0:000  Saving ACPI tables from RSDP 6A375000 to EFI\CLOVER\ACPI\origin ...
+18:284  0:000   6A375000: 'RSD PTR ', Rev: 2 (Acpi 2.0 or newer), Len: 36 -> RSDP.aml
+18:323  0:039    (Xsdt: 6A3750C0, Rsdt: 6A375028)
+18:323  0:000    6A3750C0: 'XSDT', 'GBTUACPI', Rev: 1, Len: 260 -> XSDT.aml
+18:374  0:051    6A375028: 'RSDT', 'GBTUACPI', Rev: 1, Len: 148 -> RSDT.aml
+18:408  0:034    Tables in Xsdt: 28
+18:408  0:000    0. 6A39E648: 'FACP', 'GBTUACPI', Rev: 6, Len: 276 -> FACP.aml
+18:463  0:055        (Dsdt: 6A375260, Facs: 6A742C40, XDsdt: 6A375260, XFacs: 0)
+18:463  0:000        6A375260: 'DSDT', 'GBTUACPI', Rev: 2, Len: 168929 -> DSDT.aml
+18:521  0:057        6A742C40: 'FACS', Ver: 2, Len: 64 -> FACS.aml
+18:560  0:039    1. 6A39E760: 'APIC', 'GBTUACPI', Rev: 3, Len: 188 -> APIC.aml
+18:598  0:037    2. 6A39E820: 'FPDT', 'GBTUACPI', Rev: 1, Len: 68 -> FPDT.aml
+18:645  0:046    3. 6A39E868: 'MCFG', 'GBTUACPI', Rev: 1, Len: 60 -> MCFG.aml
+18:688  0:042    4. 6A39E8A8: 'SSDT', 'SataTabl', Rev: 1, Len: 882 -> SSDT-0-SataTabl.aml
+18:733  0:045    5. 6A39EC20: 'FIDT', 'GBTUACPI', Rev: 1, Len: 156 -> FIDT.aml
+18:783  0:050    6. 6A39ECC0: 'SLIC', 'GBTUACPI', Rev: 1, Len: 374 -> SLIC.aml
+18:817  0:034    7. 6A39EE38: 'SSDT', 'SaSsdt', Rev: 2, Len: 12633 -> SSDT-1-SaSsdt.aml
+18:864  0:046    8. 6A3A1F98: 'SSDT', 'PegSsdt', Rev: 2, Len: 10461 -> SSDT-2-PegSsdt.aml
+18:899  0:035    9. 6A3A4878: 'HPET', 'KBL', Rev: 1, Len: 56 -> HPET.aml
+18:945  0:045    10. 6A3A48B0: 'SSDT', 'Ther_Rvp', Rev: 2, Len: 3557 -> SSDT-3-Ther_Rvp.aml
+18:980  0:035    11. 6A3A5698: 'SSDT', 'xh_rvp11', Rev: 2, Len: 2302 -> SSDT-4-xh_rvp11.aml
+19:033  0:052    12. 6A3A5F98: 'UEFI', 'EDK2', Rev: 1, Len: 66 -> UEFI.aml
+19:070  0:037    13. 6A3A5FE0: 'SSDT', 'CpuSsdt', Rev: 2, Len: 3806 -> SSDT-5-CpuSsdt.aml (Found hidden SSDT 7 pcs)
+19:118  0:048        * 6A246398: 'SSDT', 'Cpu0Ist', Rev: 2, Len: 1617  53 53 44 54 51 06 00 00 02 B5 50 6D 52 65 66 00 Internal length = 1617 -> SSDT-x5_0-Cpu0Ist.aml
+19:156  0:037        * 69BF7218: 'SSDT', 'ApIst', Rev: 2, Len: 1628  53 53 44 54 5C 06 00 00 02 AF 50 6D 52 65 66 00 Internal length = 1628 -> SSDT-x5_1-ApIst.aml
+19:204  0:048        * 69BF7A98: 'SSDT', 'Cpu0Cst', Rev: 2, Len: 1023  53 53 44 54 FF 03 00 00 02 AF 50 6D 52 65 66 00 Internal length = 1023 -> SSDT-x5_2-Cpu0Cst.aml
+19:241  0:037        * 69BF6018: 'SSDT', 'ApCst', Rev: 2, Len: 394  53 53 44 54 8A 01 00 00 02 39 50 6D 52 65 66 00 Internal length = 394 -> SSDT-x5_3-ApCst.aml
+19:291  0:049        * 6A246C18: 'SSDT', 'Cpu0Hwp', Rev: 2, Len: 277  53 53 44 54 15 01 00 00 02 AE 50 6D 52 65 66 00 Internal length = 277 -> SSDT-x5_4-Cpu0Hwp.aml
+19:329  0:038        * 69BF6218: 'SSDT', 'ApHwp', Rev: 2, Len: 407  53 53 44 54 97 01 00 00 02 F1 50 6D 52 65 66 00 Internal length = 407 -> SSDT-x5_5-ApHwp.aml
+19:378  0:049        * 69BF7018: 'SSDT', 'HwpLvt', Rev: 2, Len: 420  53 53 44 54 A4 01 00 00 02 3C 50 6D 52 65 66 00 Internal length = 420 -> SSDT-x5_6-HwpLvt.aml
+19:416  0:037  
+19:416  0:000    14. 6A3A6EC0: 'LPIT', 'KBL', Rev: 1, Len: 148 -> LPIT.aml
+19:465  0:049    15. 6A3A6F58: 'WSMT', 'KBL', Rev: 1, Len: 40 -> WSMT.aml
+19:503  0:037    16. 6A3A6F80: 'SSDT', 'HdaDsp', Rev: 2, Len: 321 -> SSDT-6-HdaDsp.aml
+19:552  0:049    17. 6A3A70C8: 'SSDT', 'sensrhub', Rev: 2, Len: 671 -> SSDT-7-sensrhub.aml
+19:595  0:043    18. 6A3A7368: 'SSDT', 'PtidDevc', Rev: 2, Len: 12290 -> SSDT-8-PtidDevc.aml
+19:636  0:040    19. 6A3AA370: 'SSDT', 'TbtTypeC', Rev: 2, Len: 542 -> SSDT-9-TbtTypeC.aml
+19:687  0:051    20. 6A3AA590: 'DBGP', '', Rev: 1, Len: 52 -> DBGP.aml
+19:723  0:035    21. 6A3AA5C8: 'DBG2', '', Rev: 0, Len: 84 -> DBG2.aml
+19:769  0:045    22. 6A3AA620: 'BGRT', 'GBTUACPI', Rev: 1, Len: 56 -> BGRT.aml
+19:806  0:036    23. 6A3AA658: 'SSDT', 'SgPeg', Rev: 2, Len: 174 -> SSDT-10-SgPeg.aml
+19:848  0:042    24. 6A3AA708: 'DMAR', 'KBL', Rev: 1, Len: 168 -> DMAR.aml
+19:883  0:035    25. 6A3AA7B0: 'TPM2', 'Tpm2Tabl', Rev: 3, Len: 52 -> TPM2.aml
+19:925  0:041    26. 6A3AA7E8: 'SSDT', 'OptTabl', Rev: 1, Len: 7415 -> SSDT-11-OptTabl.aml
+19:968  0:043    27. 6A3AC4E0: 'ASF!', ' HCG', Rev: 32, Len: 160 -> ASF!.aml
+20:017  0:048    Tables in Rsdt: 28
+20:017  0:000    0. 6A3751D8: 'FACP', 'GBTUACPI', Rev: 2, Len: 132 -> RSDT-FACP.aml
+20:056  0:038        (Dsdt: 6A375260, Facs: 6A742C00)
+20:056  0:000        6A375260: 'DSDT', 'GBTUACPI', Rev: 2, Len: 168929
+20:067  0:010        6A742C00: 'FACS', Ver: 0, Len: 64 -> RSDT-FACS.aml
+20:107  0:040    1. 6A39E760: 'APIC', 'GBTUACPI', Rev: 3, Len: 188
+20:107  0:000    2. 6A39E820: 'FPDT', 'GBTUACPI', Rev: 1, Len: 68
+20:107  0:000    3. 6A39E868: 'MCFG', 'GBTUACPI', Rev: 1, Len: 60
+20:107  0:000    4. 6A39E8A8: 'SSDT', 'SataTabl', Rev: 1, Len: 882
+20:107  0:000    5. 6A39EC20: 'FIDT', 'GBTUACPI', Rev: 1, Len: 156
+20:107  0:000    6. 6A39ECC0: 'SLIC', 'GBTUACPI', Rev: 1, Len: 374
+20:107  0:000    7. 6A39EE38: 'SSDT', 'SaSsdt', Rev: 2, Len: 12633
+20:107  0:000    8. 6A3A1F98: 'SSDT', 'PegSsdt', Rev: 2, Len: 10461
+20:107  0:000    9. 6A3A4878: 'HPET', 'KBL', Rev: 1, Len: 56
+20:107  0:000    10. 6A3A48B0: 'SSDT', 'Ther_Rvp', Rev: 2, Len: 3557
+20:107  0:000    11. 6A3A5698: 'SSDT', 'xh_rvp11', Rev: 2, Len: 2302
+20:107  0:000    12. 6A3A5F98: 'UEFI', 'EDK2', Rev: 1, Len: 66
+20:107  0:000    13. 6A3A5FE0: 'SSDT', 'CpuSsdt', Rev: 2, Len: 3806
+20:107  0:000    14. 6A3A6EC0: 'LPIT', 'KBL', Rev: 1, Len: 148
+20:107  0:000    15. 6A3A6F58: 'WSMT', 'KBL', Rev: 1, Len: 40
+20:107  0:000    16. 6A3A6F80: 'SSDT', 'HdaDsp', Rev: 2, Len: 321
+20:107  0:000    17. 6A3A70C8: 'SSDT', 'sensrhub', Rev: 2, Len: 671
+20:107  0:000    18. 6A3A7368: 'SSDT', 'PtidDevc', Rev: 2, Len: 12290
+20:107  0:000    19. 6A3AA370: 'SSDT', 'TbtTypeC', Rev: 2, Len: 542
+20:107  0:000    20. 6A3AA590: 'DBGP', '', Rev: 1, Len: 52
+20:107  0:000    21. 6A3AA5C8: 'DBG2', '', Rev: 0, Len: 84
+20:107  0:000    22. 6A3AA620: 'BGRT', 'GBTUACPI', Rev: 1, Len: 56
+20:107  0:000    23. 6A3AA658: 'SSDT', 'SgPeg', Rev: 2, Len: 174
+20:107  0:000    24. 6A3AA708: 'DMAR', 'KBL', Rev: 1, Len: 168
+20:107  0:000    25. 6A3AA7B0: 'TPM2', 'Tpm2Tabl', Rev: 3, Len: 52
+20:107  0:000    26. 6A3AA7E8: 'SSDT', 'OptTabl', Rev: 1, Len: 7415
+20:107  0:000    27. 6A3AC4E0: 'ASF!', ' HCG', Rev: 32, Len: 160
+20:107  0:000  Found UEFI Acpi 1.0 RSDP at 6A375000
+20:107  0:000  Printing ACPI tables from RSDP 6A375000 ...
+20:107  0:000   6A375000: 'RSD PTR ', Rev: 2 (Acpi 2.0 or newer), Len: 36
+20:107  0:000    (Xsdt: 6A3750C0, Rsdt: 6A375028)
+20:107  0:000    6A3750C0: 'XSDT', 'GBTUACPI', Rev: 1, Len: 260
+20:107  0:000    6A375028: 'RSDT', 'GBTUACPI', Rev: 1, Len: 148
+20:107  0:000    Tables in Xsdt: 28
+20:107  0:000    0. 6A39E648: 'FACP', 'GBTUACPI', Rev: 6, Len: 276
+20:107  0:000        (Dsdt: 6A375260, Facs: 6A742C40, XDsdt: 6A375260, XFacs: 0)
+20:107  0:000        6A375260: 'DSDT', 'GBTUACPI', Rev: 2, Len: 168929
+20:118  0:010        6A742C40: 'FACS', Ver: 2, Len: 64
+20:118  0:000    1. 6A39E760: 'APIC', 'GBTUACPI', Rev: 3, Len: 188
+20:118  0:000    2. 6A39E820: 'FPDT', 'GBTUACPI', Rev: 1, Len: 68
+20:118  0:000    3. 6A39E868: 'MCFG', 'GBTUACPI', Rev: 1, Len: 60
+20:118  0:000    4. 6A39E8A8: 'SSDT', 'SataTabl', Rev: 1, Len: 882
+20:118  0:000    5. 6A39EC20: 'FIDT', 'GBTUACPI', Rev: 1, Len: 156
+20:118  0:000    6. 6A39ECC0: 'SLIC', 'GBTUACPI', Rev: 1, Len: 374
+20:118  0:000    7. 6A39EE38: 'SSDT', 'SaSsdt', Rev: 2, Len: 12633
+20:118  0:000    8. 6A3A1F98: 'SSDT', 'PegSsdt', Rev: 2, Len: 10461
+20:118  0:000    9. 6A3A4878: 'HPET', 'KBL', Rev: 1, Len: 56
+20:118  0:000    10. 6A3A48B0: 'SSDT', 'Ther_Rvp', Rev: 2, Len: 3557
+20:118  0:000    11. 6A3A5698: 'SSDT', 'xh_rvp11', Rev: 2, Len: 2302
+20:118  0:000    12. 6A3A5F98: 'UEFI', 'EDK2', Rev: 1, Len: 66
+20:118  0:000    13. 6A3A5FE0: 'SSDT', 'CpuSsdt', Rev: 2, Len: 3806
+20:118  0:000    14. 6A3A6EC0: 'LPIT', 'KBL', Rev: 1, Len: 148
+20:118  0:000    15. 6A3A6F58: 'WSMT', 'KBL', Rev: 1, Len: 40
+20:118  0:000    16. 6A3A6F80: 'SSDT', 'HdaDsp', Rev: 2, Len: 321
+20:118  0:000    17. 6A3A70C8: 'SSDT', 'sensrhub', Rev: 2, Len: 671
+20:118  0:000    18. 6A3A7368: 'SSDT', 'PtidDevc', Rev: 2, Len: 12290
+20:118  0:000    19. 6A3AA370: 'SSDT', 'TbtTypeC', Rev: 2, Len: 542
+20:118  0:000    20. 6A3AA590: 'DBGP', '', Rev: 1, Len: 52
+20:118  0:000    21. 6A3AA5C8: 'DBG2', '', Rev: 0, Len: 84
+20:118  0:000    22. 6A3AA620: 'BGRT', 'GBTUACPI', Rev: 1, Len: 56
+20:118  0:000    23. 6A3AA658: 'SSDT', 'SgPeg', Rev: 2, Len: 174
+20:118  0:000    24. 6A3AA708: 'DMAR', 'KBL', Rev: 1, Len: 168
+20:118  0:000    25. 6A3AA7B0: 'TPM2', 'Tpm2Tabl', Rev: 3, Len: 52
+20:118  0:000    26. 6A3AA7E8: 'SSDT', 'OptTabl', Rev: 1, Len: 7415
+20:118  0:000    27. 6A3AC4E0: 'ASF!', ' HCG', Rev: 32, Len: 160
+20:118  0:000    Tables in Rsdt: 28
+20:118  0:000    0. 6A3751D8: 'FACP', 'GBTUACPI', Rev: 2, Len: 132
+20:118  0:000        (Dsdt: 6A375260, Facs: 6A742C00)
+20:118  0:000        6A375260: 'DSDT', 'GBTUACPI', Rev: 2, Len: 168929
+20:129  0:010        6A742C00: 'FACS', Ver: 0, Len: 64
+20:129  0:000    1. 6A39E760: 'APIC', 'GBTUACPI', Rev: 3, Len: 188
+20:129  0:000    2. 6A39E820: 'FPDT', 'GBTUACPI', Rev: 1, Len: 68
+20:129  0:000    3. 6A39E868: 'MCFG', 'GBTUACPI', Rev: 1, Len: 60
+20:129  0:000    4. 6A39E8A8: 'SSDT', 'SataTabl', Rev: 1, Len: 882
+20:129  0:000    5. 6A39EC20: 'FIDT', 'GBTUACPI', Rev: 1, Len: 156
+20:129  0:000    6. 6A39ECC0: 'SLIC', 'GBTUACPI', Rev: 1, Len: 374
+20:129  0:000    7. 6A39EE38: 'SSDT', 'SaSsdt', Rev: 2, Len: 12633
+20:129  0:000    8. 6A3A1F98: 'SSDT', 'PegSsdt', Rev: 2, Len: 10461
+20:129  0:000    9. 6A3A4878: 'HPET', 'KBL', Rev: 1, Len: 56
+20:129  0:000    10. 6A3A48B0: 'SSDT', 'Ther_Rvp', Rev: 2, Len: 3557
+20:129  0:000    11. 6A3A5698: 'SSDT', 'xh_rvp11', Rev: 2, Len: 2302
+20:129  0:000    12. 6A3A5F98: 'UEFI', 'EDK2', Rev: 1, Len: 66
+20:129  0:000    13. 6A3A5FE0: 'SSDT', 'CpuSsdt', Rev: 2, Len: 3806
+20:129  0:000    14. 6A3A6EC0: 'LPIT', 'KBL', Rev: 1, Len: 148
+20:129  0:000    15. 6A3A6F58: 'WSMT', 'KBL', Rev: 1, Len: 40
+20:129  0:000    16. 6A3A6F80: 'SSDT', 'HdaDsp', Rev: 2, Len: 321
+20:129  0:000    17. 6A3A70C8: 'SSDT', 'sensrhub', Rev: 2, Len: 671
+20:129  0:000    18. 6A3A7368: 'SSDT', 'PtidDevc', Rev: 2, Len: 12290
+20:129  0:000    19. 6A3AA370: 'SSDT', 'TbtTypeC', Rev: 2, Len: 542
+20:129  0:000    20. 6A3AA590: 'DBGP', '', Rev: 1, Len: 52
+20:129  0:000    21. 6A3AA5C8: 'DBG2', '', Rev: 0, Len: 84
+20:129  0:000    22. 6A3AA620: 'BGRT', 'GBTUACPI', Rev: 1, Len: 56
+20:129  0:000    23. 6A3AA658: 'SSDT', 'SgPeg', Rev: 2, Len: 174
+20:129  0:000    24. 6A3AA708: 'DMAR', 'KBL', Rev: 1, Len: 168
+20:129  0:000    25. 6A3AA7B0: 'TPM2', 'Tpm2Tabl', Rev: 3, Len: 52
+20:129  0:000    26. 6A3AA7E8: 'SSDT', 'OptTabl', Rev: 1, Len: 7415
+20:129  0:000    27. 6A3AC4E0: 'ASF!', ' HCG', Rev: 32, Len: 160
