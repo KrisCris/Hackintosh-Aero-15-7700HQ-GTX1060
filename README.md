@@ -14,7 +14,7 @@
 
 ### Please change the serial number before you use it.
 
-## Specs
+## Specs （From NotebookCheck）
 
 - **Processor:** Intel Core i7-7700HQ](https://www.notebookcheck.net/Intel-Core-i7-7700HQ-Notebook-Processor.187975.0.html) ([Intel Core i7](https://www.notebookcheck.net/Intel-Core-i7-Notebook-Processor-Clarksfield.21025.0.html))
 - **Graphics:** [NVIDIA GeForce GTX 1060 (Laptop)](https://www.notebookcheck.net/Mobile-NVIDIA-GeForce-GTX-1060-Laptop-Benchmarks-and-Specs.169547.0.html) - 6144 MB, Core: 1405 MHz, Memory: 4000 MHz, GDDR5, ForceWare 376.67, Optimus
